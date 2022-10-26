@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tjwa
+  labels:
+    app: tap
+spec:
+  containers:
+  - name: tjwa
+    image: vmwaretimmy/tanzu-java-web-app
+    ports:
+      - containerPort: 8080
