@@ -1,0 +1,8 @@
+app:
+  replicaCount: 3
+  image:
+    repo: harbor.lab.tw/jenkins/tjwa
+    tag: v1
+  service:
+    type: LoadBalancer
+    port: 80
